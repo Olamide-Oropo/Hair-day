@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Habib Olamide Oluwatobi Oropo">
+    <meta name="description" content="A warm and relaxing atosphere for edgy hair colors and relaxing nail services" />
+    <link rel="stylesheet" href="../styles/home.css">
+    <link rel="stylesheet" href="../styles/header.css">
+    <link rel="stylesheet" href="../styles/footer.css">
+    <link rel="stylesheet" href="../styles/contact.css">
+    <link rel="shortcut icon" href="assets/images/Artboard 1.png" type="image/x-icon">
+    <title>Contact Hair Day</title>
+    <script defer src="../scripts/script.js"></script>
+</head>
+
+<body>
+    <header>
+        <section>
+            <img src="../assets/images/Artboard 19.png" alt="navbrand" />
+            <img src="../assets/images/Artboard 23.png" alt="navbrand name"/>
+        </section>
+        <div aria-label="on Click for drawer" role="button" class="navdrawercontainer" onclick="handleOpen()">
+            <input type="checkbox" name="navdrawer" id="navdrawer" />
+            <label for="navdrawer" class="navlabel"></label>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="./services.html">Services</a></li>
+                <li class="active"><a href="./contact.html">Contacts</a></li>
+                <li><a href="./portfolio.html">Portfolio</a></li>
+                <li><a href="./FAQ.html">FAQs</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="carousel-slide herosection">
+            <img src="../assets/images/phone-2814158_1920.jpg" alt="contact banner" />
+            <article>
+                <h2 class="titletext">We are always avaliable</h2>
+            </article>
+        </section>
+        <section class="contact-form-container">
+            <section class="contact-form-header">
+                <h2>Get in Touch With Us</h2>
+                <p>Non ut eu amet officia nostrud labore sunt enim Lorem nulla qui dolore. Excepteur nisi esse Lorem incididunt aute
+                    veniam. Irure occaecat cupidatat dolore ad nulla.</p>
+            </section>
+            <section class="conatct-info">
+                <section class="contact-address">
+                    <h3>Hair Day Services</h3>
+                    <section>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-telephone-fill"
+                            viewBox="0 0 16 16">
+                            <path fill-rule="evenodd"
+                                d="M1.885.511a1.745 1.745 0 0 1 2.61.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.678.678 0 0 0 .178.643l2.457 2.457a.678.678 0 0 0 .644.178l2.189-.547a1.745 1.745 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.634 18.634 0 0 1-7.01-4.42 18.634 18.634 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877L1.885.511z" />
+                        </svg>
+                        <p>+123 4567 891</p>
+                    </section>
+                    <section>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-envelope-open-fill"
+                            viewBox="0 0 16 16">
+                            <path
+                                d="M8.941.435a2 2 0 0 0-1.882 0l-6 3.2A2 2 0 0 0 0 5.4v.314l6.709 3.932L8 8.928l1.291.718L16 5.714V5.4a2 2 0 0 0-1.059-1.765l-6-3.2ZM16 6.873l-5.693 3.337L16 13.372v-6.5Zm-.059 7.611L8 10.072.059 14.484A2 2 0 0 0 2 16h12a2 2 0 0 0 1.941-1.516ZM0 13.373l5.693-3.163L0 6.873v6.5Z" />
+                        </svg>
+                        <p>info@hairdayservices.com</p>
+                    </section>
+                </section>
+                <form class="contact-form">
+                    <label for="name">Name</label>
+                    <input type="text" name="name" id="name" placeholder="Name">
+                    <label for="Email">Email</label>
+                    <input type="email" name="Email" id="Email" placeholder="Email">
+                    <label for="Tel">Telephone Number</label>
+                    <input type="tel" name="Tel" id="Tel" placeholder="Telephone Number">
+                    <label for="Msg" placeholder="Message">Message</label>
+                    <textarea name="Msg" id="Msg" placeholder="Message"></textarea>
+                    <button>SEND</button>
+                </form>
+            </section>
+        </section>
+    </main>
+</body>
+
+</html>

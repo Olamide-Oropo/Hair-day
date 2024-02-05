@@ -1,0 +1,72 @@
+.contact-form-container{
+    margin: 3rem 0;
+    display: grid;
+    place-items: center;
+    width: 100vw;
+}
+.contact-form-container h2{
+    color: var(--maincolor);
+    font-size: var(--heading-font);
+    font-weight: 600;
+    text-align: center;
+}
+.contact-form-header{
+    display: grid;
+    place-items: center;
+}
+.contact-form-container  p{
+    line-height: 1.75rem;
+    width:80%;
+    margin:0;
+    margin-bottom: 3rem;
+}
+.contact-form{
+    display: grid;
+    place-items: center;
+}
+.contact-form >label{
+    display: block !important;
+    margin:.6rem 0;
+    color: var(--black);
+    width: 100%;
+    text-align: start;
+}
+.contact-form input,.contact-form textarea{
+    margin-top: 0 !important;
+    margin-bottom: 1.2rem;
+}
+.contact-form textarea::placeholder{
+    font-family: 'Poppins', sans-serif;
+}
+.conatct-info{
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+    flex-wrap: wrap-reverse;
+    gap:3rem;
+}
+.contact-address{
+    width: 250px;
+    margin: 1.5rem 0;
+}
+.contact-address p{
+    width: fit-content;
+    margin: 0 !important;
+    color: var(--grey);
+    font-weight: 600;
+}
+.contact-address h5{
+    color: var(--maincolor);
+    font-size:var(--lead-font);
+    margin:0
+}
+.contact-address section{
+    width: max-content;
+    display: flex;
+    gap:20px;
+    align-items: center;
+    margin: 1rem 0;
+}
+.contact-address svg{
+    fill:var(--maincolor)
+}

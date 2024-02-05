@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Habib Olamide Oluwatobi Oropo">
+    <link rel="stylesheet" href="../styles/home.css">
+    <link rel="stylesheet" href="../styles/header.css">
+    <link rel="stylesheet" href="../styles/footer.css">
+    <link rel="stylesheet" href="../styles/portfolio.css">
+    <link rel="shortcut icon" href="assets/images/Artboard 1.png" type="image/x-icon">
+    <title>An Array Hair Day's Workmanship</title>
+    <script defer src="../scripts/script.js"></script>
+</head>
+<body>
+    <header>
+        <section>
+            <img src="../assets/images/Artboard 19.png" alt="navbrand" />
+            <img src="../assets/images/Artboard 23.png" alt="navbrand name"/>
+        </section>
+        <div aria-label="on Click for drawer" role="button" class="navdrawercontainer" onclick="handleOpen()">
+            <input type="checkbox" name="navdrawer" id="navdrawer" />
+            <label for="navdrawer" class="navlabel"></label>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="./services.html">Services</a></li>
+                <li><a href="./contact.html">Contacts</a></li>
+                <li class="active"><a href="./portfolio.html">Portfolio</a></li>
+                <li><a href="./FAQ.html">FAQs</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="carousel-slide herosection portfolio-banner">
+            <img src="../assets/images/friendship-day-3104635_1920.jpg" class="portfolio-banner" alt="portfolio banner"/>
+            <article>
+                <h2 class="titletext">Our Work,Projects And Crafts</h2>
+            </article>
+        </section>
+        <section class="center portfolio-container Container">
+            <h2>Trendy styles we have for you</h2>
+            <section class="portfolio">
+                <figure><img  src="../assets/images/girl-2120196_1920.jpg" alt="portfolio-image" id="1"/></figure>
+                <figure><img  src="../assets/images/blonde-240941_1920.jpg" alt="portfolio-image" id="2"/></figure>
+                <figure><img  src="../assets/images/woman-5989552_1920.jpg" alt="portfolio-image" id="3"/></figure>
+                <figure><img  src="../assets/images/beauty-salon-4043096_1920.jpg" alt="portfolio-image" id="4"/></figure>
+                <figure><img  src="../assets/images/girl-2961959_1920.jpg" alt="portfolio-image" id="5"/></figure>
+                <figure><img  src="../assets/images/estetica-2901113_1920.jpg" alt="portfolio-image" id="6"/></figure>
+                <figure><img  src="../assets/images/woman-1439909_1920.jpg" alt="portfolio-image" id="7"/></figure>
+                <figure><img  src="../assets/images/portrait-3204843_1920.jpg" alt="portfolio-image" id="8"/></figure>
+                <figure><img  src="../assets/images/girl-3023831_1920.jpg" alt="portfolio-image" id="9"/></figure>
+                <figure><img  src="../assets/images/paint-brush-5206399_1920.jpg" alt="portfolio-image" id="10"/></figure>
+                <figure><img  src="../assets/images/eye-shadows-6198839_1920.jpg" alt="portfolio-image" id="11"/></figure>
+                <figure><img  src="../assets/images/makeup-3093870_1920.jpg" alt="portfolio-image" id="12"/></figure>
+            </section>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; Copyright Hair Day 2023. All rights reversed</p>
+        <img src="../assets/images/Artboard 19.png" alt="footer brand" />
+        <div>
+            <h5>Salon hours</h5>
+            <p>Monaday - Friday <strong>9am-8am</strong></p>
+            <p>Saturday <strong> 9am-5am</strong></p>
+            <p>Sunday <strong> CLOSED</strong></p>
+        </div>
+    </footer>
+</body>
+<script>
+
+    var portfolio = document.querySelector(".portfolio")
+    var portfolioArray = Array.from(portfolio.children);
+    var portfolioOffset = portfolio.offsetTop
+    const observerPortfolio = new IntersectionObserver(entries => {
+        entries.forEach(entry => {
+            if(entry.isIntersecting){
+                portfolioArray.map(item => {
+                    var lag = Number(item.firstChild.id) * 0.3;
+                    item.style.setProperty("transition-delay", lag + "s")
+                    item.style.setProperty("opacity", "1")
+                })
+            }
+        })
+    }, {
+        threshold: .2,
+    })
+    observerPortfolio.observe(portfolio);
+</script>
+</html>

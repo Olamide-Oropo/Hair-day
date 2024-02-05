@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Habib Olamide Oluwatobi Oropo">
+    <meta name="description" content="A warm and relaxing atosphere for edgy hair colors and relaxing nail services" />
+    <link rel="stylesheet" href="./styles/home.css">
+    <link rel="stylesheet" href="./styles/header.css">
+    <link rel="stylesheet" href="./styles/footer.css">
+    <link rel="shortcut icon" href="./assets/images/Artboard 1.png" type="image/x-icon">
+    <title>A warm and relaxing atosphere for edgy hair colors and relaxing nail services</title>
+    <script defer src="scripts/script.js"></script>
+</head>
+<body>
+    <header>
+        <section>
+            <img src="./assets/images/Artboard 19.png" alt="navbrand"/>
+            <img src="./assets/images/Artboard 23.png" alt="navbrand name" />
+        </section>
+        <form aria-label="on Click for drawer" class="navdrawercontainer" onclick="handleOpen()">
+            <label for="navdrawer">Click to open drawer on mobile view</label>
+            <input type="checkbox" name="navdrawer" id="navdrawer" />
+            <label class="navlabel"></label>
+        </form>
+        <nav>
+            <ul>
+                <li class="active"><a href="/index.html">Home</a></li>
+                <li><a href="/routes/services.html">Services</a></li>
+                <li><a href="/routes/contact.html">Contacts</a></li>
+                <li><a href="/routes/portfolio.html">Portfolio</a></li>
+                <li><a href="/routes/FAQ.html">FAQs</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="carousel">
+            <section class="carousel-slides">
+                <section class="carousel-slide">
+                    <img src="./assets/images/barbershop-4484297_1920.jpg" alt="carousel pictures"/>
+                    <article>
+                        <h2>Best of services on offer</h2>
+                        <p class="highlighttext">We are here to give you a good and relaxing experience because you deserve it.</p>
+                        <button>Book Appiontment</button>
+                    </article>
+                </section>
+                <section class="carousel-slide">
+                    <img src="./assets/images/hairdressing-salon-2693077_1920.jpg" alt="carousel pictures"/>
+                    <article>
+                        <h2>Broad range of services</h2>
+                        <p class="highlighttext">A broad range of services are on offer at hair day. Want to learn more?</p>
+                        <button>Hair Day services</button>
+                    </article>
+                </section>
+                <section class="carousel-slide">
+                    <img src="./assets/images/hair-5473078_1920.jpg" alt="carousel pictures"/>
+                    <article>
+                        <h2>Certified professionals at work</h2>
+                        <p class="highlighttext">We give to you only the best of professional stylist and personel for your outmost comfort</p>
+                        <button>Explore Hair Day</button>
+                    </article>
+                </section>
+            </section>
+            <button type="button" name="next" aria-label="click for next slide" id="next">
+                <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="white" class="bi bi-chevron-left"
+                    viewBox="0 0 16 16">
+                    <path fill-rule="evenodd"
+                        d="M11.354 1.646a.5.5 0 0 1 0 .708L5.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0z" />
+                </svg>
+            </button>
+            <button type="button" name="prev" aria-label="click for previous slide" id="prev">
+                <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="white" class="bi bi-chevron-left"
+                    viewBox="0 0 16 16">
+                    <path fill-rule="evenodd"
+                        d="M11.354 1.646a.5.5 0 0 1 0 .708L5.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0z" />
+                </svg>
+            </button>
+        </section>
+        <section class="info Container">
+            <article class="noshow">
+                <h2>30% discount on all offers and Packages.</h2>
+                <p>We are now offering a special 2-mount discount promo on our packages,services and products</p>
+                <button>Learn More</button>
+            </article>
+            <img class="noshow" src="./assets/images/woman-7481192.svg" alt="promotional banner"/>
+        </section>
+        <section class="details Container">
+            <section class="noshow">
+                <img src="./assets/images/beauty-salon-3277314_1920.jpg" alt="beauty salon background"/>
+                <article class="Card">
+                    <h3>Who are we</h3>
+                    <p>Learn more about Hair Day services and history.</p>
+                    <button>Explore Hair Day</button>
+                </article>
+            </section>
+            <section class="noshow">
+                <img src="./assets/images/people-2583493_1920.jpg" alt="nail services background"/>
+                <article class="Card">
+                    <h3>Nail Day</h3>
+                    <p>
+                        We also offer the best nail services to our customers.
+                    </p>
+                    <button>Book nail appionment</button>
+                </article>
+            </section>
+            <article class="Card noshow list">
+                <h3>Why chose Hair Day</h3>
+                <ul>
+                    <li>We provide custom coloring techniques.</li>
+                    <li>Working with certified stylists with high proficiency</li>
+                    <li>Round the clock avaliability</li>
+                    <li>Pride ourselves in our warm and serene atmosphere</li>
+                </ul>
+            </article>
+        </section>
+        <section>
+            <section class="testimonials-section">
+                <h2 class="titletext" style="text-align: center; color: white;">Our customers love us</h2>
+                <section class="testimonials">
+                    <article class="testimonial noshow">
+                    <section>
+                        <img src="./assets/images/happy-1836445_1920.jpg" alt="testimonial image"/>
+                        <h3>Ramala Rosko</h3>
+                        <p>Frequent client</p>
+                    </section>
+                    <svg fill="#d98371" width="32px" height="32px" viewBox="0 0 32 32" version="1.1" xmlns="http://www.w3.org/2000/svg">
+                        <title>quote</title>
+                        <path
+                            d="M9.563 8.469l-0.813-1.25c-5.625 3.781-8.75 8.375-8.75 12.156 0 3.656 2.688 5.375 4.969 5.375 2.875 0 4.906-2.438 4.906-5 0-2.156-1.375-4-3.219-4.688-0.531-0.188-1.031-0.344-1.031-1.25 0-1.156 0.844-2.875 3.938-5.344zM21.969 8.469l-0.813-1.25c-5.563 3.781-8.75 8.375-8.75 12.156 0 3.656 2.75 5.375 5.031 5.375 2.906 0 4.969-2.438 4.969-5 0-2.156-1.406-4-3.313-4.688-0.531-0.188-1-0.344-1-1.25 0-1.156 0.875-2.875 3.875-5.344z">
+                        </path>
+                    </svg>
+                    <blockquote>
+                        Sit dolor consequat sint duis id veniam nisi enim et dolor anim. Qui deserunt sit velit nisi fugiat cillum laboris excepteur cillum labore. Commodo excepteur reprehenderit mollit aliqua anim consectetur adipisicing minim qui veniam.
+                    </blockquote>
+                </article>
+                <article class="testimonial noshow">
+                    <section>
+                        <img src="./assets/images/smile-2072907_1920.jpg" alt="testimonial image"/>
+                        <h3>Rashidat Adewunmi</h3>
+                        <p>Store Owner</p>
+                    </section>
+                    <svg fill="#d98371" width="32px" height="32px" viewBox="0 0 32 32" version="1.1" xmlns="http://www.w3.org/2000/svg">
+                        <title>quote</title>
+                        <path
+                            d="M9.563 8.469l-0.813-1.25c-5.625 3.781-8.75 8.375-8.75 12.156 0 3.656 2.688 5.375 4.969 5.375 2.875 0 4.906-2.438 4.906-5 0-2.156-1.375-4-3.219-4.688-0.531-0.188-1.031-0.344-1.031-1.25 0-1.156 0.844-2.875 3.938-5.344zM21.969 8.469l-0.813-1.25c-5.563 3.781-8.75 8.375-8.75 12.156 0 3.656 2.75 5.375 5.031 5.375 2.906 0 4.969-2.438 4.969-5 0-2.156-1.406-4-3.313-4.688-0.531-0.188-1-0.344-1-1.25 0-1.156 0.875-2.875 3.875-5.344z">
+                        </path>
+                    </svg>
+                    <blockquote>
+                        Sit dolor consequat sint duis id veniam nisi enim et dolor anim. Qui deserunt sit velit nisi fugiat cillum laboris excepteur cillum labore. Commodo excepteur reprehenderit mollit aliqua anim consectetur adipisicing minim qui veniam.
+                    </blockquote>
+                </article>
+                <article class="testimonial noshow">
+                    <section>
+                        <img src="./assets/images/woman-657753_1280.jpg" alt="testimonial image"/>
+                        <h3>Juliana Mars</h3>
+                        <p>Sales executive</p>
+                    </section>
+                    <svg fill="#d98371" width="32px" height="32px" viewBox="0 0 32 32" version="1.1" xmlns="http://www.w3.org/2000/svg">
+                        <title>quote</title>
+                        <path
+                            d="M9.563 8.469l-0.813-1.25c-5.625 3.781-8.75 8.375-8.75 12.156 0 3.656 2.688 5.375 4.969 5.375 2.875 0 4.906-2.438 4.906-5 0-2.156-1.375-4-3.219-4.688-0.531-0.188-1.031-0.344-1.031-1.25 0-1.156 0.844-2.875 3.938-5.344zM21.969 8.469l-0.813-1.25c-5.563 3.781-8.75 8.375-8.75 12.156 0 3.656 2.75 5.375 5.031 5.375 2.906 0 4.969-2.438 4.969-5 0-2.156-1.406-4-3.313-4.688-0.531-0.188-1-0.344-1-1.25 0-1.156 0.875-2.875 3.875-5.344z">
+                        </path>
+                    </svg>
+                    <blockquote>
+                        Sit dolor consequat sint duis id veniam nisi enim et dolor anim. Qui deserunt sit velit nisi fugiat cillum laboris excepteur cillum labore. Commodo excepteur reprehenderit mollit aliqua anim consectetur adipisicing minim qui veniam.
+                    </blockquote>
+                </article>
+            </section>
+        </section>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+            <path fill="#d98371" fill-opacity="1"
+                d="M0,160L48,165.3C96,171,192,181,288,181.3C384,181,480,171,576,154.7C672,139,768,117,864,138.7C960,160,1056,224,1152,245.3C1248,267,1344,245,1392,234.7L1440,224L1440,0L1392,0C1344,0,1248,0,1152,0C1056,0,960,0,864,0C768,0,672,0,576,0C480,0,384,0,288,0C192,0,96,0,48,0L0,0Z">
+            </path>
+        </svg>
+        </section>
+        <section class="info Container about">
+            <article class="noshow">
+                <h2 style="color: rgb(35, 35, 35);">About Hairday</h2>
+                <p>Id qui fugiat eu qui sit occaecat dolore irure in elit officia. Eu voluptate aliqua ullamco veniam laborum et mollit. Et culpa dolor ut eiusmod excepteur nostrud exercitation eu reprehenderit elit aliqua.</p>
+                <button>Explore Hairday</button>
+            </article>
+            <img src="./assets/images/Artboard 1.png" alt="about hairday banner" class="noshow" />
+        </section>
+        <section class="info Container founder">
+            <article class="noshow">
+                <h2 style="color: rgb(35, 35, 35);">Our Founder</h2>
+                <p>Id qui fugiat eu qui sit occaecat dolore irure in elit officia. Eu voluptate aliqua ullamco veniam laborum et mollit. Et culpa dolor ut eiusmod excepteur nostrud exercitation eu reprehenderit elit aliqua.Consectetur tempor aute ipsum nulla.</p>
+            </article>
+            <figure>
+                <img src="./assets/images/young-woman-1867618_1920.jpg" alt="about hairday banner" class="noshow" />
+                <figcaption class="leadtext">
+                    Maria Rohan founder of little lemon
+                </figcaption>
+            </figure>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; Copyright Hair Day 2023. All rights reversed</p>
+        <img src="./assets/images/Artboard 19.png" alt="footer brand"/>
+        <div>
+            <h5>Salon hours</h5>
+            <p>Monaday - Friday <strong>9am-8am</strong></p>
+            <p>Saturday <strong> 9am-5am</strong></p>
+            <p>Sunday <strong> CLOSED</strong></p>
+        </div>
+    </footer>
+</body>
+<script>
+    var count = 1
+    var isClicked = false
+    var carousel = document.querySelector(".carousel-slides");
+    var carouselSlidesContent = Array.from(document.querySelectorAll(".carousel-slide"));
+    var next = document.getElementById("next");
+    var prev = document.getElementById("prev");
+    var clonedContent = [];
+    function nextSlide(){
+        isClicked = true
+        var carouselSlides = document.querySelectorAll(".carousel-slide").length;
+        if(carouselSlides > count){
+            carousel.style.setProperty("left",`-${count * 100}%`)
+            carousel.style.setProperty("transition-duration", "1s")
+            count ++
+        }
+        if(count  === Number(carouselSlides - 1)){
+            carouselSlidesContent.forEach(slide => {
+                var clone = slide.cloneNode(true)
+                clonedContent.push(clone)
+            })
+        }
+        clonedContent.forEach(clone => {
+            carousel.append(clone)
+        })
+    }
+    function prevSlide(){
+        var carouselSlides = document.querySelectorAll(".carousel-slide").length;
+        isClicked = true
+        if(count > 1){
+            count -= 2
+            carousel.style.setProperty("left", `-${count * 100}%`)
+            carousel.style.setProperty("transition-duration", "500ms")
+            count ++
+        }
+    }
+    function autoslide(){
+        setInterval(nextSlide, 4000)
+    }
+    next.addEventListener("click",() => {
+        console.log(isClicked)
+        nextSlide()
+        window.removeEventListener("load", autoslide)
+    })
+    prev.addEventListener("click",() => {
+        prevSlide()
+        window.removeEventListener("load", autoslide)
+    })
+    window.addEventListener("load", autoslide)
+</script>
+</html>

@@ -1,0 +1,20 @@
+.professionals{
+    box-shadow: none;
+    gap:0px;
+}
+.professionals > p{
+    color:var(--grey);
+    line-height: 1.8rem;
+    text-align: center;
+    font-size: var(--highlight-font);
+}
+.service article{
+    max-width: 550px !important;
+}
+.service article p{
+    max-width: 500px;
+    width: 100% !important;
+}
+.reverse{
+    flex-direction: row-reverse !important;
+}

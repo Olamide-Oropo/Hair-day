@@ -1,0 +1,109 @@
+.faq-header{
+    gap:15px;
+    margin: 50px 0;
+    margin-top: 100px;
+}
+.faq-header h2{
+    margin: .2em 0;
+    text-align: center;
+}
+.faq-header p{
+    margin: .2em 0;
+    margin-bottom: .5rem;
+    color:var(--grey)
+}
+.faq-main{
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.faq-section{
+    margin: .5rem 0;
+}
+.ask-us{
+    background-color: var(--subcolor);
+    width: 95vw;
+    padding: 2rem 0;
+    border-radius: var(--subborder-radius);
+    color:white;
+    margin:3.5rem 0;
+}
+.ask-us h5{
+    margin: .3em 0;
+}
+.ask-us figure{
+    margin: 0;
+}
+.ask-us img{
+    width: 70px;
+    height: 70px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 3px solid white;
+    position: relative;
+}
+.ask-us img:first-child{
+    left: 20px;
+}
+.ask-us img:last-child{
+    right: 20px;
+}
+.ask-us p{
+    color:white
+}
+#Faq-field:focus::placeholder{
+    color:var(--subcolor)
+}
+.faq-container{
+    display: grid;
+    place-items: center;
+    margin: 1rem 0;
+}
+.faq-summary{
+    padding: 0 .8rem;
+    box-shadow: 0px 0px 5px rgb(180, 180, 180);
+    border-radius: var(--mainborder-radius);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    min-width: 300px;
+    width:50vw;
+    margin: 0;
+    color: var(--black);
+    line-height: 1.5rem;
+    font-weight: var(--lead-font);
+}
+.faq-text{
+    font-size: var(--hightlight-font);
+    font-weight: 600;
+    width: 80%;
+}
+.faq-btn{
+    transform: rotate(180deg);
+    transition: all .4s ease;
+}
+.faq-details{
+    min-width: 300px;
+    width: 50vw;
+    line-height: 1.5rem;
+    color:var(--black);
+    font-size: var(--hightlight-font);
+    margin: 0;
+    margin-left: .5rem;
+    height: 0;
+    opacity:0;
+    transition: .3s ease-out;
+    text-indent: .5rem;
+}
+.open-faq{
+    margin: 1rem 0;
+    margin-left: .5rem;
+    opacity:1;
+    height: fit-content;
+    transition: opacity .4s ease-in-out;
+}
+.open-icon{
+    transform: rotate(270deg);
+}
