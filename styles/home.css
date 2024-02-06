@@ -381,4 +381,7 @@ article>ul li:first-child{
     :root{
         --title-font:22pt;
     }
+    .details{
+        gap:5rem
+    }
 }

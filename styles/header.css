@@ -100,7 +100,11 @@ nav ul>li:hover {
 
     .navdrawercontainer {
         position: relative;
-        display: block;
+        display: flex;
+        width: 35px;
+        height: 35px;
+        justify-content: center;
+        align-items: center;
     }
 
     .navlabel {
@@ -138,11 +142,14 @@ nav ul>li:hover {
         position: absolute;
         opacity: 0;
         z-index: 100;
+        top:0;
+        left:0
     }
     .navlabel > #navdrawer:checked{
         height: 0;
     }
     #navdrawer:checked+.navlabel {
+        transition: none;
         height: 0;
     }
 
@@ -156,7 +163,8 @@ nav ul>li:hover {
 }
 @media screen and (max-width:330px) {
     header nav ul {
-        justify-content: space-around;
+        justify-content: center;
+        gap:12px
     }
 
     header nav ul li {
